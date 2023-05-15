@@ -8,8 +8,8 @@ from pymongo import MongoClient
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-MONGODB_URL = os.environ.get("mongodb+srv://adrianpadlasantika:<password>@cluster0.llgf708.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("Cluster0")
+MONGODB_URI = os.environ.get("MONGODB_URI")
+DB_NAME = os.environ.get("DB_NAME")
 
 client = MongoClient('mongodb+srv://adrianpadlasantika:Adrianpadla03@cluster0.llgf708.mongodb.net/?retryWrites=true&w=majority')
 db = client[DB_NAME]
