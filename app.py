@@ -13,6 +13,7 @@ DB_NAME = os.environ.get("DB_NAME")
 
 client = MongoClient(MONGODB_URI)
 db = client[DB_NAME]
+
 app = Flask(__name__)
 
 @app.route('/')
